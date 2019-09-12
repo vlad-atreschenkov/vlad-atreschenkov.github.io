@@ -1,0 +1,462 @@
+/*@media (max-width: 1600px) {
+
+    .topMusic {
+        margin-left: 60vh;
+    }
+}*/
+
+@media (max-width: 1280px) {
+
+    /*body,
+    html {
+        overflow: visible!important;
+    }*/
+    .vendorList > a {
+        width: 15vmin;
+        height: 10vmin;
+        background-size: 80% auto;
+    }
+
+    #mainVideo {
+        height: 100%;
+        width: auto;
+    }
+
+    #menu {
+        height: 5vw;
+    }
+
+    #menu li {
+        padding: 0 1vw;
+    }
+
+    #menu li a,
+    #menu li.active a {
+        font-size: 3vw;
+    }
+
+    #playerContainer {
+        left: 0;
+        bottom: 5vw;
+    }
+
+    footer {
+        height: 5vw;
+        position: absolute;
+        top: auto;
+        bottom: 0;
+        width: 100%;
+        background: rgba(128, 128, 128, .5);
+    }
+
+    #youtube,
+    #vk, #instagram {
+        width: 5vw;
+    }
+
+    #tel {
+        line-height: 2.5vw;
+        font-size: 2.4vw;
+        margin-left: 2vw;
+    }
+
+    .mainSection {
+        height: calc(100vw / 8 * 5);
+        margin-top: 5vw;
+    }
+
+    .mainSection > div > p,
+    .mainSection > div > h1 {
+        font-size: 3vw;
+        line-height: 6vw;
+    }
+
+    .mainSection span.nameConcert {
+        font-size: 4vw;
+    }
+    
+    .mainSection #buy a{
+        padding: 0 3vw;
+    }
+
+    #controllerVideo {
+        height: 5vw;
+        width: 5vw;
+        left: 3vw;
+        top: 8vw;
+    }
+
+    .topMusicSection {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: end;
+        -ms-flex-align: end;
+        align-items: flex-end;
+        height: calc(100vw/8*5);
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .topMusic {
+        margin-top: 0;
+        margin-left: 45vw;
+        height: calc(100vw/8*5 - 10vw);
+        -ms-flex-line-pack: distribute;
+        align-content: space-around;
+        margin-right: 2vw;
+        top: 5vw;
+    }
+
+    .topMusic > div {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .topMusic > div > h3 {
+        margin-bottom: 2vw;
+        font-size: 2.5vw;
+    }
+
+    .box {
+        width: 14vw;
+        height: 14vw;
+    }
+
+    .box:after {
+        -webkit-box-shadow: 0 0 2.5vw 1px #656565;
+        box-shadow: 0 0 2.5vw 1px #656565;
+    }
+
+
+    .albumsSection {
+        height: auto;
+        padding-top: 0;
+        border-top: 0;
+    }
+
+    .albums {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        width: 100%;
+        height: 50vw;
+    }
+
+    .albums > div {
+        width: 25%;
+        height: 25vw;
+    }
+
+    .infoAlbum > p {
+        font-size: 3.5vw;
+    }
+
+
+    .concertSection {
+        height: calc(100vw/7*5);
+        padding-top: 0;
+    }
+
+    img.afisha {
+        height: 100%;
+        width: auto;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .infoConcert {
+        height: 100%;
+        width: 100%;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .infoConcert > p {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 550px) and (orientation: portrait) {
+
+    body {
+        background-color: #232323;
+    }
+
+    #menu {
+        height: 12vw;
+        background: #232323;
+        border: none;
+    }
+
+    #menu li {
+        width: 25%;
+        padding: 0 0.5vw;
+        background: none;
+    }
+
+    #menu li a,
+    #menu li.active a {
+        font-size: 4.5vw;
+        color: #fff;
+    }
+
+    footer {
+        height: 12vw;
+        position: absolute;
+        top: auto;
+        bottom: 0;
+        width: 100%;
+        background: rgba(128, 128, 128, .8);
+    }
+
+    #youtube,
+    #vk, #instagram {
+        width: 10vw;
+        height: 10vw;
+        margin-left: 1vw;
+    }
+
+    #tel {
+        line-height: 5.5vw;
+        font-size: 3.5vw;
+        margin-left: 2vw;
+    }
+
+    .mainSection {
+        height: 135vw;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-line-pack: justify;
+        align-content: space-between;
+        margin-top: 14vw;
+        background: none;
+    }
+
+    #mainVideo {
+        width: 100%;
+        height: auto;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%)
+    }
+
+    .mainSection > div {
+        height: calc(50% - 100vw/32*9);
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 6vw 1vw;
+    }
+
+    .mainSection > div > p,
+    .mainSection > div > h1 {
+        line-height: 12vw;
+        font-size: 5vw;
+        background: none;
+    }
+
+    .mainSection #buy {
+        width: 50%;
+        margin: auto;
+    }
+    
+    .mainSection #buy a {
+        padding: 0;
+    }
+    
+    .mainSection span.nameConcert {
+        font-size: 10vw;
+        /*text-shadow: -1px -1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000, 1px 1px 1px #000;*/
+        text-shadow: 0 0 2px #000;
+    }
+
+    #controllerVideo {
+        height: 10vw;
+        width: 10vw;
+        left: 3vw;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    .popup {
+        height: 80%;
+        width: 80%;
+        border-radius: 0;
+    }
+
+    .vendorList {
+        width: 100%;
+        height: 100%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .vendorList > a {
+        width: 80%;
+        height: 20%;
+    }
+
+    a.bycard {
+        background-size: 40% auto;
+    }
+
+    a.ticketpro {
+        background-size: 60% auto;
+    }
+
+    a.kvitki {
+        background-size: 70% auto;
+    }
+
+    a.kassy_by {
+        background-size: 75% auto;
+    }
+
+    .topMusicSection {
+        height: 160vw;
+        display: block;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        height: 275vw;
+        background-size: 150% auto;
+        box-shadow: none;
+        background-color: #a8a29e;
+    }
+
+    .topMusic {
+        margin: 0;
+        width: 100%;
+        height: 160vw;
+        padding-bottom: 10vw;
+    }
+
+    .topMusic > div {
+        width: 50%;
+    }
+
+    .topMusic > div > h3 {
+        margin-bottom: 4vw;
+        font-size: 5vw;
+    }
+
+    .box {
+        width: 30vw;
+        height: 30vw;
+    }
+
+    #playerContainer {
+        left: 0px;
+        bottom: 0;
+        height: 7vh;
+        width: 100%;
+        background: #e42838;
+        z-index: 8;
+    }
+    
+    #playerContainer:hover {
+        background: #e42838;
+    }
+
+    #playPause {
+        width: 6vh;
+        height: 6vh;
+    }
+
+    #stop {
+        height: 6vh;
+        width: 6vh;
+    }
+
+    #songName {
+        font-size: 5vw;
+        margin: 0 5%;
+    }
+
+    #iTunesSong {
+        width: 6vh;
+        height: 6vh;
+    }
+
+
+    .albumsSection {
+        height: 200vw;
+        padding-top: 0;
+        border-top: 0;
+    }
+
+    .albums {
+        height: 200vw;
+    }
+
+    .albums > div {
+        width: 50%;
+        height: 50vw;
+    }
+
+    .infoAlbum > p {
+        font-size: 6vw;
+    }
+
+    .concertSection {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    img.afisha {
+        width: 80%;
+        margin-bottom: 10vw;
+    }
+
+    .infoConcert {
+        width: 100%;
+        height: auto;
+        padding: 10% 10% 5vw 10%;
+        background: #f1f1f1;
+        color: #232323;
+    }
+
+    .infoConcert > p {
+        font-size: 5vw;
+        padding-bottom: 5vw;
+        line-height: 1.3;
+    }
+
+    .concertSection > div > p#buy2 {
+        text-align: center;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        line-height: 1.5;
+    }
+    
+    .concertSection > div > p#buy2 a {
+        background: rgb(228, 40, 56);
+        width: 100%;
+        display: inline-block;
+        box-sizing: border-box;
+        font-size: 6vw;
+    }
+}

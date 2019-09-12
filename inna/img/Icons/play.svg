@@ -1,0 +1,13 @@
+<svg width="48" height="48" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path id="svg_1" fill="none" d="m-838,-2232l1400,0l0,3600l-1400,0l0,-3600z"/>
+  <ellipse stroke="null" ry="23.929164" rx="23.929164" id="svg_4" cy="23.999998" cx="23.898819" stroke-opacity="null" stroke-width="null" fill="#777777"/>
+  <path stroke="null" fill="#ffffff" id="svg_2" d="m18.428329,12.5755l0,22.848999l17.952785,-11.4245l-17.952785,-11.4245z"/>
+ </g>
+</svg>

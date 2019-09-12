@@ -1,0 +1,99 @@
+.vendorList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+a.bycard {
+    background: url(../img/tickets/bycard.svg) center center no-repeat;
+}
+
+a.ticketpro {
+    background: url(../img/tickets/ticketpro.png) center center no-repeat;
+}
+
+a.kvitki {
+    background: url(../img/tickets/kvitki.png) center center no-repeat;
+}
+
+a.kassy_by {
+    background: url(../img/tickets/kassy.png) center center no-repeat;
+}
+
+a.kupalauski {
+    background: url(../img/tickets/kupalauski.png) center center no-repeat;
+}
+
+.vendorList > a {
+    width: 24vmin;
+    height: 18vmin;
+    background-size: 80% auto;
+}
+
+.vendorList > a:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    /*top: 0;
+	left: 0;*/
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+    z-index: 9;
+}
+
+.popup {
+    position: absolute;
+    width: auto;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+}
+
+.close-popup {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+}
+
+.close-popup:before {
+    content: '';
+    background-color: red;
+    position: absolute;
+    height: 1px;
+    width: 31px;
+    top: 11px;
+    left: -4px;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.close-popup:after {
+    content: '';
+    background-color: red;
+    position: absolute;
+    height: 1px;
+    width: 31px;
+    top: 11px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    left: -4px;
+}

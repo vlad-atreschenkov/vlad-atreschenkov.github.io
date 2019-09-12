@@ -1,0 +1,207 @@
+.albumsSection {
+    height: 100vh;
+    width: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(#a8a29e), to(#f1f1f1));
+    background: -webkit-linear-gradient(#f1f1f1, #a8a29e);
+    background: -o-linear-gradient(#f1f1f1, #a8a29e);
+    background: -webkit-gradient(linear, left top, left bottom, from(#f1f1f1), to(#a8a29e));
+    background: linear-gradient(#f1f1f1, #a8a29e);
+    padding-top: 7vmin;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+}
+
+.albums {
+    width: 160vmin;
+    height: 80vmin;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: auto;
+    -webkit-box-shadow: 0 0 4vmin 1px #656565;
+    box-shadow: 0 0 4vmin 1px #656565;
+}
+
+/* - CSS animation - */
+
+.albums > div {
+    width: calc(100%/4);
+    height: 40vmin;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s
+}
+
+/* - CSS animation - */
+
+.infoAlbum {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+}
+
+.infoAlbum > p {
+    width: 100%;
+    color: white;
+    text-align: center;
+    margin-bottom: 10%;
+    line-height: 1.2;
+    font-size: 4vmin;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    letter-spacing: 0.02rem;
+    font-weight: 300;
+}
+
+.infoAlbum > a {
+    width: 20%;
+    height: 20%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 100%;
+}
+
+.infoAlbum a:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+}
+
+a.iTunesAlbumLink {
+    background-image: url(../img/Icons/itunes2.svg);
+}
+
+a.googleAlbumLink {
+    background-image: url(../img/Icons/googlemusic2.svg);
+}
+
+a.yandexAlbumLink {
+    background-image: url(../img/Icons/yandexmusic2.svg);
+}
+
+/* - CSS animation - */
+
+.albums > div:hover div:first-child {
+    -webkit-filter: blur(1px);
+    filter: blur(1px);
+}
+
+/* - CSS animation - */
+
+.albums > div:hover .infoAlbum {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.albums > div > div {
+    width: 100%;
+    height: 100%;
+}
+
+#album_1 {
+    background-image: url(../img/albums/1.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#album_2 {
+    background-image: url(../img/albums/2.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#album_3 {
+    background-image: url(../img/albums/3.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#album_4 {
+    background-image: url(../img/albums/4.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#album_5 {
+    background-image: url(../img/albums/5.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#album_6 {
+    background-image: url(../img/albums/6.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#album_7 {
+    background-image: url(../img/albums/7.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#album_8 {
+    background-image: url(../img/albums/8.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.animationOpacity {
+    -webkit-animation: opacity 2s;
+    animation: opacity 2s;
+}
+
+@-webkit-keyframes opacity {
+    from {
+        -webkit-filter: opacity(0);
+        filter: opacity(0);
+    }
+
+    to {
+        -webkit-filter: opacity(1);
+        filter: opacity(1);
+    }
+}
+
+@keyframes opacity {
+    from {
+        -webkit-filter: opacity(0);
+        filter: opacity(0);
+    }
+
+    to {
+        -webkit-filter: opacity(1);
+        filter: opacity(1);
+    }
+}

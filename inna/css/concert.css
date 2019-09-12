@@ -1,0 +1,181 @@
+.concertSection {
+    height: 100vh;
+    width: 100%;
+    padding-top: 7vmin;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    background: #f1f1f1;
+    overflow: hidden;
+}
+
+img.afisha {
+    height: 84vmin;
+    width: auto;
+    -webkit-box-shadow: 0 0 4vmin 1px #656565;
+    box-shadow: 0 0 4vmin 1px #656565;
+}
+
+.infoConcert {
+    height: 84vmin;
+    width: calc(94% - 52.5vmin);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 4vmin 4vmin 2vmin 4vmin;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f6f6f6), to(#fff));
+    background: -webkit-linear-gradient(#f6f6f6, #fff);
+    background: -o-linear-gradient(#f6f6f6, #fff);
+    background: linear-gradient(#f6f6f6, #fff);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0 0 4vmin 1px #656565;
+    box-shadow: 0 0 4vmin 1px #656565;
+    text-align: justify;
+}
+
+.infoConcert > p {
+    width: 100%;
+    color: black;
+    font-size: 3.5vmin;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+}
+
+.infoConcert span {
+    color: rgb(228, 40, 56);
+}
+
+.concertSection > div > p#buy2 {
+    text-align: center;
+}
+
+.concertSection > div > p#buy2 > a {
+    width: auto;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    letter-spacing: 0.02em;
+    background-color: rgba(228, 40, 56, .7);
+    color: white;
+    padding: 2vmin 6vmin;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    text-decoration: none;
+}
+
+.concertSection > div > p#buy2 > a:hover {
+    background-color: rgb(228, 40, 56);
+    cursor: pointer;
+}
+
+/* анимация CSS для WOW.js */
+
+.animated {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.animated.infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes concertAnimationLeftRight {
+    0% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+        -webkit-filter: opacity(0);
+        filter: opacity(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-filter: opacity(1);
+        filter: opacity(1);
+    }
+}
+
+@keyframes concertAnimationLeftRight {
+    0% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+        -webkit-filter: opacity(0);
+        filter: opacity(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-filter: opacity(1);
+        filter: opacity(1);
+    }
+}
+
+@-webkit-keyframes concertAnimationRightLeft {
+    0% {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+        -webkit-filter: opacity(0);
+        filter: opacity(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-filter: opacity(1);
+        filter: opacity(1);
+    }
+}
+
+@keyframes concertAnimationRightLeft {
+    0% {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+        -webkit-filter: opacity(0);
+        filter: opacity(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-filter: opacity(1);
+        filter: opacity(1);
+    }
+}
+
+.concertAnimationLeftRight {
+    -webkit-animation-name: concertAnimationLeftRight;
+    animation-name: concertAnimationLeftRight;
+}
+
+.concertAnimationRightLeft {
+    -webkit-animation-name: concertAnimationRightLeft;
+    animation-name: concertAnimationRightLeft;
+}

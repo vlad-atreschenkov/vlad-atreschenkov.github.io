@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131836632-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-131836632-1');
+    </script>
+
+    <meta charset="UTF-8">
+    <title>Концерт Инны Афанасьевой "Любовь моя..."</title>
+    <meta name="description" content='Официальный промо-сайт юбилейного концерта Инны Афанасьевой "Любовь моя...", который состоялся в Минске 2 ноября 2018 года в 19:00 на сцене Дворца Республики.'>
+    <meta name="keywords" content="Инна Афанасьева, Любовь моя, концерт Инны Афанасьевой, концерт Минск, Дворец Республики, 2 ноября, песни Инны Афанасьевой">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" lang="ru" content="Атрещенков Владислав vlad.atreschenkov@gmail.com">
+    
+    <meta name="google-site-verification" content="YJpowcvrnCXK8Mh1J0kC9gpiNq0j27ALhSS37zBy3w0" />
+
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(50322283, "init", {
+        id:50322283,
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+    });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/50322283" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/fonts.css">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/preloader.css">
+
+    <link rel="stylesheet" href="css/main2.css">
+    <link rel="stylesheet" href="css/concert.css">
+    <link rel="stylesheet" href="css/albums.css">
+    <link rel="stylesheet" href="css/topMusic.css">
+
+    <link rel="stylesheet" href="css/media.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+        $(window).on('load', function() {
+
+            var mainVideo = document.getElementById("mainVideo");
+            var WindowWidth = $(window).width();
+
+            if (WindowWidth < 800) {
+                mainVideo.src = "video/low.mp4";
+            } else {
+                mainVideo.src = "video/high.mp4";
+            }
+            var $preloader = $('#p_prldr');
+            $preloader.fadeOut('slow');
+
+            mainVideo.play();
+        });
+
+    </script>
+</head>
+
+<body>
+
+    <div id="p_prldr" class="container">
+        <div class="item-1"></div>
+        <div class="item-2"></div>
+        <div class="item-3"></div>
+        <div class="item-4"></div>
+        <div class="item-5"></div>
+        <div class="item-6"></div>
+    </div>
+
+    <nav>
+        <ul id="menu">
+            <li data-menuanchor="main"><a href="#main">Главная</a></li>
+            <li data-menuanchor="about_concert"><a href="#about_concert">О концерте</a></li>
+            <li data-menuanchor="discography"><a href="#discography">Дискография</a></li>
+            <li data-menuanchor="greatest_hits"><a href="#greatest_hits">Лучшие хиты</a></li>
+        </ul>
+    </nav>
+
+    <div id="playerContainer" class="hidden" style="display:none">
+        <a target="_blank" id="iTunesSong" title="Купить в iTunes"></a>
+
+        <div id="songName">Название песни</div>
+        <div id="playPause" class="pausePlayer"></div>
+        <div id="stop"></div>
+        <audio id="audioPlayer" src=""></audio>
+    </div>
+
+    <div id="fullpage">
+        <div class="section fp-auto-height" data-anchor="main">
+            <!-- Блок 1 -->
+            <div class="mainSection">
+                <video id="mainVideo" src="" width="100%" height="auto" muted playsinline loop="loop" preload="auto">
+                    Ваш браузер не поддерживает HTML5 видео.
+                </video>
+
+                <div>
+                    <h1>ИННА АФАНАСЬЕВА<br>
+                    <span class="nameConcert">Любовь моя...</span><br>
+                    юбилейный концерт</h1>
+                </div>
+                <div>
+                    <p></p>
+                    <p id="buy"><a href="https://www.youtube.com/watch?v=SkppIlNu5Q4&t=5829s" target="_blank" title="">Смотреть на YouTube</a></p>
+                    <p></p>
+                </div>
+                <div id="controllerVideo" class="mute"></div>
+            </div>
+        </div>
+
+        <div class="section fp-auto-height" data-anchor="about_concert">
+            <!-- Блок 2 -->
+            <section class="concertSection">
+                <h1 style="display: none;">Информация о концерте Инны Афанасьевой "Любовь моя..."</h1>
+                <img class="afisha concertAnimationLeftRight wow " src="img/afisha_5_7.jpg" alt="Афиша концерта">
+                <div class="infoConcert concertAnimationRightLeft wow">
+                    <p><span>Грандиозный сольный концерт</span>, приуроченный сразу к двум значимым событиям в жизни королевы белорусской эстрады: 30-летию творческой деятельности и юбилею самой исполнительницы. 2 ноября Инна Афанасьева вышла на главную сцену страны, чтобы вновь покорить сердца своих поклонников и спеть свои самые лучшие песни, которые знает вся страна на протяжении уже 30 лет.</p>
+                    <p><span>Живой звук</span>, яркие декорации и, конечно-же, незабываемые эмоции 	&#8211; и всё это на сцене Дворца Республики! Не упустите шанс насладиться живым выступлением главной певицы страны!</p>
+                    <p><span>Гости концерта:</span> народная артистка Беларуси Ядвига Поплавская, заслуженная артистка Республики Беларусь Ирина Дорофеева, AURA.</p>
+                    <p id="buy2"><a href="https://www.youtube.com/watch?v=SkppIlNu5Q4&t=5829s" target="_blank"> Смотреть на YouTube</a></p>
+                </div>
+            </section>
+        </div>
+
+        <div class="section fp-auto-height" data-anchor="discography">
+            <!-- Блок 3 -->
+            <section class="albumsSection">
+                <h1 style="display: none">Альбомы Инны Афанасьевой</h1>
+                <div class="albums">
+                    <div>
+                        <div id="album_1"></div>
+                        <div class="infoAlbum">
+                            <p>История<br>моей любви (live)</p>
+                            <a class="iTunesAlbumLink" href="https://itunes.apple.com/by/album/%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F-%D0%BC%D0%BE%D0%B5%D0%B9-%D0%BB%D1%8E%D0%B1%D0%B2%D0%B8-live/1155197646" target="_blank" title="Купить в iTunes"></a>
+                            <a class="googleAlbumLink" href="https://play.google.com/store/music/album/%D0%98%D0%BD%D0%BD%D0%B0_%D0%90%D1%84%D0%B0%D0%BD%D0%B0%D1%81%D1%8C%D0%B5%D0%B2%D0%B0_%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F_%D0%BC%D0%BE%D0%B5%D0%B9_%D0%BB%D1%8E%D0%B1%D0%B2%D0%B8_Live?id=Be7kflb4v5hofikxvovgxekvzse" target="_blank" title="Купить в Google Play"></a>
+                            <a class="yandexAlbumLink" href="https://music.yandex.by/album/4564434" target="_blank" title="Слушать в Яндекс.Музыке"></a>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="album_2"></div>
+                        <div class="infoAlbum">
+                            <p>THE BEST</p>
+                            <a class="iTunesAlbumLink" href="https://itunes.apple.com/by/album/the-best/1163057445" target="_blank" title="Купить в iTunes"></a>
+                            <a class="googleAlbumLink" href="https://play.google.com/store/music/album/%D0%98%D0%BD%D0%BD%D0%B0_%D0%90%D1%84%D0%B0%D0%BD%D0%B0%D1%81%D1%8C%D0%B5%D0%B2%D0%B0_The_Best?id=Bvdfidmoil3nj5l742zrip7r7li" target="_blank" title="Купить в Google Play"></a>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="album_3"></div>
+                        <div class="infoAlbum">
+                            <p lang="be">Родны беражок</p>
+                            <a class="iTunesAlbumLink" href="https://itunes.apple.com/by/album/%D1%80%D0%BE%D0%B4%D0%BD%D1%8B-%D0%B1%D0%B5%D1%80%D0%B0%D0%B6%D0%BE%D0%BA-ep/1170667551" target="_blank" title="Купить в iTunes"></a>
+                            <a class="googleAlbumLink" href="https://play.google.com/store/music/album/%D0%98%D0%BD%D0%BD%D0%B0_%D0%90%D1%84%D0%B0%D0%BD%D0%B0%D1%81%D1%8C%D0%B5%D0%B2%D0%B0_%D0%A0%D0%BE%D0%B4%D0%BD%D1%8B_%D0%B1%D0%B5%D1%80%D0%B0%D0%B6%D0%BE%D0%BA_EP?id=Bf7fjk3xivpqthkynhjp4xvzm6y" target="_blank" title="Купить в Google Play"></a>
+                            <a class="yandexAlbumLink" href="https://music.yandex.by/album/4564777" target="_blank" title="Слушать в Яндекс.Музыке"></a>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="album_4"></div>
+                        <div class="infoAlbum">
+                            <p>Сбудется - не сбудется</p>
+                            <a class="iTunesAlbumLink" href="https://itunes.apple.com/by/album/%D1%81%D0%B1%D1%83%D0%B4%D0%B5%D1%82%D1%81%D1%8F-%D0%BD%D0%B5-%D1%81%D0%B1%D1%83%D0%B4%D0%B5%D1%82%D1%81%D1%8F-2016-edition/1233470345" target="_blank" title="Купить в iTunes"></a>
+                            <a class="googleAlbumLink" href="https://play.google.com/store/music/album/%D0%98%D0%BD%D0%BD%D0%B0_%D0%90%D1%84%D0%B0%D0%BD%D0%B0%D1%81%D1%8C%D0%B5%D0%B2%D0%B0_%D0%A1%D0%B1%D1%83%D0%B4%D0%B5%D1%82%D1%81%D1%8F_%D0%BD%D0%B5_%D1%81%D0%B1%D1%83%D0%B4%D0%B5%D1%82%D1%81%D1%8F?id=Bq3n3ocfpi5i6ju4ea53hshizaq" target="_blank" title="Купить в Google Play"></a>
+                            <a class="yandexAlbumLink" href="https://music.yandex.by/album/4357738" target="_blank" title="Слушать в Яндекс.Музыке"></a>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="album_5"></div>
+                        <div class="infoAlbum">
+                            <p>Жемчуга</p>
+                            <a class="iTunesAlbumLink" href="https://itunes.apple.com/by/album/%D0%B6%D0%B5%D0%BC%D1%87%D1%83%D0%B3%D0%B0-deluxe/1176939097" target="_blank" title="Купить в iTunes"></a>
+                            <a class="googleAlbumLink" href="https://play.google.com/store/music/album/%D0%98%D0%BD%D0%BD%D0%B0_%D0%90%D1%84%D0%B0%D0%BD%D0%B0%D1%81%D1%8C%D0%B5%D0%B2%D0%B0_%D0%96%D0%B5%D0%BC%D1%87%D1%83%D0%B3%D0%B0?id=B6wmnujlbd7gbzhsq6ooiyzvzdm" target="_blank" title="Купить в Google Play"></a>
+                            <a class="yandexAlbumLink" href="https://music.yandex.by/album/4564781" target="_blank" title="Слушать в Яндекс.Музыке"></a>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="album_6"></div>
+                        <div class="infoAlbum">
+                            <p>Буду с тобой...</p>
+                            <a class="iTunesAlbumLink" href="https://itunes.apple.com/by/album/%D0%B1%D1%83%D0%B4%D1%83-%D1%81-%D1%82%D0%BE%D0%B1%D0%BE%D0%B9-deluxe/1159832325" target="_blank" title="Купить в iTunes"></a>
+                            <a class="googleAlbumLink" href="https://play.google.com/store/music/album/%D0%98%D0%BD%D0%BD%D0%B0_%D0%90%D1%84%D0%B0%D0%BD%D0%B0%D1%81%D1%8C%D0%B5%D0%B2%D0%B0_%D0%91%D1%83%D0%B4%D1%83_%D1%81_%D1%82%D0%BE%D0%B1%D0%BE%D0%B9?id=Bp4dm6afb4etn43q44sdz6vmcty" target="_blank" title="Купить в Google Play"></a>
+                            <a class="yandexAlbumLink" href="https://music.yandex.by/album/4564421" target="_blank" title="Слушать в Яндекс.Музыке"></a>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="album_7"></div>
+                        <div class="infoAlbum">
+                            <p>Она и мужчины<br>(Дуэтный альбом)</p>
+                            <a class="iTunesAlbumLink" href="https://itunes.apple.com/by/album/%D0%BE%D0%BD%D0%B0-%D0%B8-%D0%BC%D1%83%D0%B6%D1%87%D0%B8%D0%BD%D1%8B-%D0%B4%D1%83%D1%8D%D1%82%D0%BD%D1%8B%D0%B9-%D0%B0%D0%BB%D1%8C%D0%B1%D0%BE%D0%BC/1163152949" target="_blank" title="Купить в iTunes"></a>
+                            <a class="googleAlbumLink" href="https://play.google.com/store/music/album/%D0%98%D0%BD%D0%BD%D0%B0_%D0%90%D1%84%D0%B0%D0%BD%D0%B0%D1%81%D1%8C%D0%B5%D0%B2%D0%B0_%D0%9E%D0%BD%D0%B0_%D0%B8_%D0%BC%D1%83%D0%B6%D1%87%D0%B8%D0%BD%D1%8B_%D0%94%D1%83%D1%8D%D1%82%D0%BD%D1%8B%D0%B9_%D0%B0%D0%BB%D1%8C%D0%B1%D0%BE%D0%BC?id=Btawicorlbjy44nk4urkx2mm46e" target="_blank" title="Купить в Google Play"></a>
+                            <a class="yandexAlbumLink" href="https://music.yandex.by/album/4274941" target="_blank" title="Слушать в Яндекс.Музыке"></a>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="album_8"></div>
+                        <div class="infoAlbum">
+                            <p>Кто бы мог<br> подумать</p>
+                            <a class="iTunesAlbumLink" href="https://itunes.apple.com/by/album/%D0%BA%D1%82%D0%BE-%D0%B1%D1%8B-%D0%BC%D0%BE%D0%B3-%D0%BF%D0%BE%D0%B4%D1%83%D0%BC%D0%B0%D1%82%D1%8C/1186091894" target="_blank" title="Купить в iTunes"></a>
+                            <a class="googleAlbumLink" href="https://play.google.com/store/music/album/%D0%98%D0%BD%D0%BD%D0%B0_%D0%90%D1%84%D0%B0%D0%BD%D0%B0%D1%81%D1%8C%D0%B5%D0%B2%D0%B0_%D0%9A%D1%82%D0%BE_%D0%B1%D1%8B_%D0%BC%D0%BE%D0%B3_%D0%BF%D0%BE%D0%B4%D1%83%D0%BC%D0%B0%D1%82%D1%8C?id=Bueohbh62hsjp3yulwg3kgwqfya" target="_blank" title="Купить в Google Play"></a>
+                            <a class="yandexAlbumLink" href="https://music.yandex.by/album/4357739" target="_blank" title="Слушать в Яндекс.Музыке"></a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+        <div class="section fp-auto-height" data-anchor="greatest_hits">
+            <!-- Блок 4 -->
+            <section class="topMusicSection">
+                <h1 style="display: none">Послушать <strong>лучшие песни Инны Афанасьевой</strong></h1>
+                <div class="topMusic">
+                    <div>
+                        <h3>Держи меня</h3>
+                        <div class="gradient-border box playBox" id="song1" data-song="0">
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Белые кружева</h3>
+                        <div class="gradient-border box playBox" id="song2" data-song="1">
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Когда-нибудь</h3>
+                        <div class="gradient-border box playBox" id="song3" data-song="2">
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Буду с тобой</h3>
+                        <div class="gradient-border box playBox" id="song4" data-song="3">
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Перечитай</h3>
+                        <div class="gradient-border box playBox" id="song5" data-song="4">
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Жемчуга</h3>
+                        <div class="gradient-border box playBox" id="song6" data-song="5">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <a id="youtube" href="https://www.youtube.com/user/AfInaTVofficial" target="_blank" title="Открыть канал YouTube"></a>
+            <a id="instagram" href="https://instagram.com/afinna_art?utm_source=ig_profile_share&igshid=7jpqrit3oq7c" target="_blank" title="Открыть Instagram"></a>
+            <a id="vk" href="https://vk.com/afina_club" target="_blank" title="Открыть группу ВК"></a>
+            <p id="tel">Справки по телефонам:<br><a href="tel:+375172228296">+375 (17) 222-82-96</a> | <a href="tel:+375296600138">+375 (29) 660-01-38</a></p>
+        </footer>
+
+    </div>
+
+    <script src="js/topMusic.js"></script>
+
+    <script src="js/jquery.fullPage.min.js"></script>
+
+    <!-- Инициализация fullpage.js -->
+    <script>
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+
+                // Передача значений атрибутов data-menuanchor кажого пунка меню для связывания меню с полноэкранной прокруткой
+                anchors: ['main', 'about_concert', 'discography', 'greatest_hits'],
+                // Передача значения ID меню 
+                menu: '#menu',
+                css3: true,
+                scrollingSpeed: 1000,
+                scrollBar: true,
+                // Значение ширины области просмотра, при которой отключается полноэкранная прокрутка
+                responsiveWidth: 1280
+            });
+        });
+
+    </script>
+
+    <script src="js/wow.min.js"></script>
+
+    <!-- Инициализация WOW.js -->
+    <script>
+        wow = new WOW({
+            // класс, скрывающий элемент до момента отображения на экране
+            boxClass: 'wow',
+            // класс для анимации элемента
+            animateClass: 'animated',
+            // расстояние в пикселях от нижнего края браузера до верхней границы элемента, необходимое для начала анимации
+            offset: 0,
+            // включение/отключение WOW.js на мобильных устройствах
+            mobile: false,
+            // поддержка асинхронно загруженных элементов
+            live: false
+        })
+        wow.init();
+
+    </script>
+
+</body>
+
+</html>

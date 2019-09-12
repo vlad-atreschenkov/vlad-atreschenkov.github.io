@@ -1,0 +1,272 @@
+body,
+html {
+    overflow-x: hidden !important;
+    overflow-y: visible;
+}
+
+body {
+    background-color: #3a3a3a;
+}
+
+.fp-auto-height.fp-section,
+.fp-auto-height .fp-slide,
+.fp-auto-height .fp-tableCell {
+    height: auto !important;
+}
+
+#menu {
+    height: 7vmin;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 6;
+    text-align: right;
+    background: rgba(128, 128, 128, 0.5);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-top: solid 1px rgb(128, 128, 128);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#menu li {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 2vmin;
+}
+
+#menu li:hover {
+    background: rgba(255, 0, 0, 0.25);
+}
+
+/*Стиль ссылки когда активен соответствующий блок*/
+
+#menu li a,
+#menu li.active a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 4vmin;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+}
+
+#menu li.active a {
+    color: #fff;
+}
+
+/*Стиль элемента списка когда активен соответствующий блок*/
+
+#menu li.active {
+    background: rgba(255, 0, 0, 0.5);
+    color: #fff;
+}
+
+.mainSection {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+
+.mainSection > div > p,
+.mainSection > div > h1 {
+    color: white;
+    font-size: 5vmin;
+    line-height: 10vmin;
+    text-align: center;
+    /*font-family: 'Poiret One', cursive;*/
+    font-family: 'Murmansk', arial;
+}
+
+.mainSection span.nameConcert {
+    /*font-family: 'Caveat', cursive;*/
+    font-family: 'KB ChopinScript', arial;
+    color: red;
+    font-size: 8vmin;
+}
+
+.mainSection #buy {
+    -webkit-animation: buyTicket 2s linear 0s infinite;
+    animation: buyTicket 2s linear 0s infinite;
+    -webkit-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    transition: background-color 1s;
+}
+
+.mainSection #buy a {
+    background-color: rgba(255, 0, 0, 0.5);
+    padding: 0 5vmin;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    letter-spacing: 0.02em;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.mainSection #buy a:hover {
+    background-color: rgba(255, 0, 0, 0.8);
+    cursor: pointer;
+}
+
+#mainVideo {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+#controllerVideo {
+    height: 7vmin;
+    width: 7vmin;
+    position: absolute;
+    left: 5vmin;
+    top: 12vmin;
+    cursor: pointer;
+    -webkit-filter: opacity(0.5);
+    filter: opacity(0.5);
+    -webkit-transition: -webkit-filter 1s;
+    transition: -webkit-filter 1s;
+    -o-transition: filter 1s;
+    transition: filter 1s;
+    transition: filter 1s, -webkit-filter 1s;
+}
+
+#controllerVideo:hover {
+    -webkit-filter: opacity(1);
+    filter: opacity(1);
+}
+
+.mute {
+    background-image: url(../img/Icons/mute.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+}
+
+.unmute {
+    background-image: url(../img/Icons/unmute.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+}
+
+footer {
+    height: 7vmin;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 50%;
+    z-index: 7;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+}
+
+#youtube,
+#vk, #instagram {
+    width: 7vmin;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 100%;
+}
+
+#youtube {
+    background-image: url(../img/Icons/youtube.svg);
+}
+
+#vk {
+    background-image: url(../img/Icons/vk.svg);
+}
+
+#instagram {
+    background-color: white;
+    background-image: url(../img/Icons/instagram.svg);
+    background-size: 65%;
+}
+
+#tel {
+    line-height: 3vmin;
+    color: #fff;
+    font-size: 2.5vmin;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    margin-left: 4vmin;
+}
+
+#tel a {
+    text-decoration: none;
+    color: #fff;
+    cursor: default;
+}
+
+@-webkit-keyframes buyTicket {
+    0% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    50% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    100% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+
+
+@keyframes buyTicket {
+    0% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    50% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    100% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
